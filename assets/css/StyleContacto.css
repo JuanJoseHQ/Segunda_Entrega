@@ -1,0 +1,43 @@
+.Index_Fondo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contacto {
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.Texto {
+    padding: 20px;
+    text-align: center; 
+}
+
+.Texto h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.Texto h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.Texto p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .Texto h2,
+    .Texto h1,
+    .Texto p {
+        margin-bottom: 10px; 
+    }
+}

@@ -72,13 +72,14 @@ Usarlo en el responsive */
     .menu-icon,
     .close-menu {
         display: block;
+        color: #fce5e5;
     }
 
     .menu {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #121212;
+        background: black;
         right: -100%;
         top: 0;
         text-align: center;

@@ -58,10 +58,9 @@
             </div>
         </div>
   
-
-    <footer>
-        <p class = "descripcion">Creado por Juan José Herrera y Felipe Ramirez &copy; 2023</p>
-    </footer>
+    <?php
+    include 'Footer.php';
+    ?>
         
 </body>
 </html>

@@ -30,7 +30,7 @@
                     <!-- Primer recuadro -->
                     <div class="recuadro">
                         <a href="Domotica.html">
-                        <img src="assets/img/Domoticaa.jpg" alt="Imagen 1">
+                        <img src="/Spirit_web/Segunda_Entrega/views/layout/Domotica.php" alt="Imagen 1">
                         </a>    
                         <p class="titulo">Domotica</p>
                         <p class="descripcion">La domótica es la automatización de sistemas y dispositivos
@@ -54,7 +54,7 @@
             
                     <!-- Tercer recuadro -->
                     <div class="recuadro">
-                        <a href="Contacto.html">
+                        <a href="/Spirit_web/Segunda_Entrega/views/layout/Contacto.php">
                         <img src="assets/img/Contacto.jpg" alt="Imagen 3">
                         </a>
                         <p class="titulo">Contacto</p>
@@ -63,10 +63,11 @@
                         </p>
                     </div>
                 </div>
+                
             </section>
-            <footer>
-                <p class = "descripcion">Creado por Juan José Herrera y Felipe Ramirez &copy; 2023</p>
-            </footer>
+            <?php
+            include __DIR__ . '/views/layout/Footer.php';
+            ?>
         </div>
     </main>
 </body>
