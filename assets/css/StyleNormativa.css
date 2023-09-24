@@ -39,6 +39,7 @@
 .Texto p {
     font-size: 16px;
     font-family: 'Lucida Console', serif;
+    color: aqua;
 }
 
 .contenedor {
