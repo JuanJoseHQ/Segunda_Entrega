@@ -16,21 +16,21 @@
 
 .Texto {
     padding: 20px;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Lucida Console', serif;
 }
 
 .Texto h2 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
 .Texto h1 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .Texto p {
-    font-size: 24px;
     margin-bottom: 20px;
 }
 

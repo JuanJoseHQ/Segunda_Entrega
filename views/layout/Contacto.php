@@ -16,15 +16,21 @@
     <div class = "Index_Fondo">
         <div class = "Contacto">
             <div class="Texto">
+                <br>
                 <h2>Información de contacto</h2>
+                <br>
                 <h1>Número de contacto</h1>
                 <p1>3216956302</p1>
+                <br><br><br>
                 <h1>Correo electrónico</h1>
-                <p1>feliperamirezloaiza10@gmail.com</p1>
+                <p1>spiritcolombia@gmail.com</p1>
+                <br><br><br>
                 <h1>Ubicación</h1>
-                <p1>Cra 24d #38c 10</p1>
+                <p1>Medellín, Colombia</p1>
+                <br><br><br>
                 <h1>Redes sociales</h1>
-                <p1>Instagram</p1>
+                <a href="https://www.instagram.com/spirit_colombia/" target="_blank">Instagram</a>
+                <br><br><br><br>
             </div>
         </div>
     </div>
