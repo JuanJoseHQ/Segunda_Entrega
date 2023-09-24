@@ -23,10 +23,6 @@ header {
     padding-right: 2.5rem;
 }
 
-
-/* Modificar el logo en el header
-(El. es porque estamos modificando el
-classs) */
 .logo {
     display: flex;
     align-items: center;
@@ -37,9 +33,6 @@ classs) */
     max-width: 200px; 
 }
 
-/* Modifican los iconos de menu y cerrar menu
-(Estos son del responisve que se ocultan cuando
-no se usan)*/
 .menu-icon,
 .close-menu {
     display: none;
@@ -47,9 +40,6 @@ no se usan)*/
     cursor: pointer;
 }
 
-/* Modificar el nav(una seccion que su propósito es 
-proporcionar enlaces de navegación) y los
-links que llevan a las demas paginas (ahref) */
 .menu a {
     font-size: small;
     color: #ffffff;
@@ -62,8 +52,6 @@ links que llevan a las demas paginas (ahref) */
     color: #00bcd4;
 }
 
-/* Desaprecer el check para posteriromente
-Usarlo en el responsive */
 #check{
     display: none;
 }
