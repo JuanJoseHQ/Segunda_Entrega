@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Normativa Ritel-Spirit Colombia</title>
-    <link rel="icon" type="image/png" href="/Segunda Entrega/assets/img/Spirit_Icon.ico"">
-    <link rel="stylesheet" type="text/css" href="/Segunda Entrega/assets/css/StyleNormativa.css">
+    <link rel="icon" type="image/png" href="/Spirit_web/Segunda_Entrega/assets/img/Spirit_Icon.ico"">
+    <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunda_Entrega/assets/css/StyleNormativa.css">
 </head>
 <body>
     <?php
@@ -22,7 +22,7 @@
                      riesgos eléctricos.</p>
             </div>
             <div class="Imagen">
-                <img src="Ritel_ritel.png">
+                <img src="/Spirit_web/Segunda_Entrega/assets/img/Ritel_ritel.png">
             </div>
         </div>
     </div>
@@ -31,25 +31,29 @@
         <div class="contenedor">
             <!-- Botón 1 -->
             <div class="boton">
-                <a href="https://drive.google.com/file/d/1QGWEpg9eHjUqVLDER5FwUqYqzuH3dtek/view"><img src="consultas.png"> </a>
+                <a href="https://drive.google.com/file/d/1QGWEpg9eHjUqVLDER5FwUqYqzuH3dtek/view">
+                    <img src="/Spirit_web/Segunda_Entrega/assets/img/consultas.png"> </a>
                 <span class="titulo">Consultas</span>
             </div>
         
             <!-- Botón 2 -->
             <div class="boton">
-                <a href="https://www.crcom.gov.co/sites/default/files/normatividad/00005993.pdf"><img src="Duda.png"> </a>
+                <a href="https://www.crcom.gov.co/sites/default/files/normatividad/00005993.pdf">
+                    <img src="/Spirit_web/Segunda_Entrega/assets/img/Duda.png"> </a>
                 <span class="titulo">¿A quien aplica?</span>
             </div>
         
             <!-- Botón 3 -->
             <div class="boton">
-                <a href="https://www.crcom.gov.co/sites/default/files/webcrc/micrositios/documents/GUIA-TECNICA-PARA-IMPLEMENTACION-DEL-RITEL.pdf"><img src="Guia.png"> </a>
+                <a href="https://www.crcom.gov.co/sites/default/files/webcrc/micrositios/documents/GUIA-TECNICA-PARA-IMPLEMENTACION-DEL-RITEL.pdf">
+                    <img src="/Spirit_web/Segunda_Entrega/assets/img/Guia.png"> </a>
                 <span class="titulo">Guía Tecnica</span>
             </div>
         
             <!-- Botón 4 -->
             <div class="boton">
-                <a href="https://onac.org.co/acreditate-con-onac/"><img src="Acreditacion.png"> </a>
+                <a href="https://onac.org.co/acreditate-con-onac/">
+                    <img src="/Spirit_web/Segunda_Entrega/assets/img/Acreditacion.png"> </a>
                 <span class="titulo">Proceso de Acreditacion</span>
             </div>
         </div>

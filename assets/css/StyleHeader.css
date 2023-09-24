@@ -6,7 +6,6 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    
     background-color:black ;
 }
 
@@ -51,22 +50,18 @@ no se usan)*/
 /* Modificar el nav(una seccion que su propósito es 
 proporcionar enlaces de navegación) y los
 links que llevan a las demas paginas (ahref) */
-.menu {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-}
-
 .menu a {
+    color: #ffffff;
     text-decoration: none;
     padding: 0 20px;
     transition: color 0.3s;
-    color: #ffffff;
 }
 
 .menu a:hover {
+    
     color: #00bcd4;
 }
+
 /* Desaprecer el check para posteriromente
 Usarlo en el responsive */
 #check{
