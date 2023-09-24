@@ -22,7 +22,6 @@ header {
     padding-top: 1.5rem; 
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    color: #ffffff;
 }
 
 
@@ -53,19 +52,20 @@ no se usan)*/
 proporcionar enlaces de navegación) y los
 links que llevan a las demas paginas (ahref) */
 .menu {
+    color: #ffffff;
     display: flex;
     align-items: center;
 }
 
 .menu a {
-    color: #00bcd4;
     text-decoration: none;
     padding: 0 20px;
     transition: color 0.3s;
+    color: #ffffff;
 }
 
 .menu a:hover {
-    color: #ffffff;
+    color: #00bcd4;
 }
 /* Desaprecer el check para posteriromente
 Usarlo en el responsive */
