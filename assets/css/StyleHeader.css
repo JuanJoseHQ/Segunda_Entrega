@@ -51,6 +51,7 @@ no se usan)*/
 proporcionar enlaces de navegación) y los
 links que llevan a las demas paginas (ahref) */
 .menu a {
+    font-size: small;
     color: #ffffff;
     text-decoration: none;
     padding: 0 20px;
@@ -58,7 +59,6 @@ links que llevan a las demas paginas (ahref) */
 }
 
 .menu a:hover {
-    
     color: #00bcd4;
 }
 
