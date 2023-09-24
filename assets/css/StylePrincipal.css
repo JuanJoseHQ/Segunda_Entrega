@@ -1,0 +1,107 @@
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-color:black ;
+}
+
+.sliders{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.slide{
+    scroll-snap-align: center;
+}
+
+.slide_contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Index_Fondo{
+    height: 100vh; 
+    width: 100vw; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.video{
+    position: absolute;
+    height: 95%; 
+    top: 0;
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+.index_titulo{
+    color: #ffffff;
+    padding-top: 10rem;
+    font-size: medium;
+    font-size: 2.5rem;
+    z-index: 30;
+    position: relative;
+    font-family: "Lucida", serif;
+}
+
+.index_parrafo{
+    color: #ffffff;
+    font-size: medium;
+    z-index: 30;
+    position: relative;
+    font-family: 'Lucida Console', serif;
+}
+
+.index_link {
+    z-index: 30;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+/* Estilos para los recuadros */
+.recuadro {
+    width: 280px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Estilos para las imágenes dentro de los recuadros */
+.recuadro img {
+   width: 100%;
+   height: 150px;
+}
+
+/* Estilos para los títulos */
+.titulo {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.descripcion{
+    color: #ccc;
+    font-family: 'Lucida Console', serif;
+}
+

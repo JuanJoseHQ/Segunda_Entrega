@@ -1,0 +1,117 @@
+ul {
+    list-style: none;
+}
+/**
+ul>li>a {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}*/
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background-color:black ;
+}
+
+header {
+    width: 96%;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem; 
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modificar el logo en el header
+(El. es porque estamos modificando el
+classs) */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    max-width: 200px; 
+}
+
+/* Modifican los iconos de menu y cerrar menu
+(Estos son del responisve que se ocultan cuando
+no se usan)*/
+.menu-icon,
+.close-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Modificar el nav(una seccion que su propósito es 
+proporcionar enlaces de navegación) y los
+links que llevan a las demas paginas (ahref) */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: #00bcd4;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+/* Desaprecer el check para posteriromente
+Usarlo en el responsive */
+#check{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon,
+    .close-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #121212;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}

@@ -1,0 +1,101 @@
+.Index_Fondo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Normativa {
+    width: 100%;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.Texto {
+    flex: 1; 
+    padding: 20px;
+}
+
+.Imagen {
+    flex: 1; 
+    text-align: center; 
+    width: 50px;
+}
+
+.Imagen img {
+    max-width: 400px; 
+}
+
+
+.Texto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Texto p {
+    font-size: 16px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 90px; 
+}
+
+.boton {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto; 
+    width: 300px;
+}
+
+.boton img {
+    width: 250px;
+    height: 150px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente en el botón */
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .Index_Fondo {
+        flex-direction: column; /* Coloca el contenido en columna */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    .Normativa {
+        height: auto; /* Altura automática para ajustar al contenido */
+        padding: 20px; /* Espacio interior */
+    }
+
+    .Texto {
+        margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+    }
+
+    .Imagen {
+        text-align: center;
+    }
+
+    .Imagen img {
+        max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+        height: auto;
+    }
+
+    .contenedor {
+        display: block; /* Organiza los botones en una columna */
+    }
+
+    .boton {
+        margin: 0 auto 20px; /* Espacio inferior entre los botones */
+        width: 90%; /* Ancho ajustado */
+    }
+}
