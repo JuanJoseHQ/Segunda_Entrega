@@ -1,0 +1,75 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518619522/doodles_cuau2z.png) repeat;
+  }
+  
+  .container{
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+  }
+
+  .form-background{
+    background: #fff;
+    width: 420px;
+    border-radius: 10px;
+    padding: 32px;
+    align-self: center;;
+  } 
+  
+  input,
+  .button-link{
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: #000000;
+    font-size: .9rem;
+    transition: .4s;
+  }
+  
+  .button-link {
+    display: inline-block;
+    background-color: #00bcd4;;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .button-link:hover {
+    background-color: #004a99;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+  }
+  
