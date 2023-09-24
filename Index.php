@@ -41,7 +41,7 @@
             
                     <!-- Segundo recuadro -->
                     <div class="recuadro">
-                        <a href="/Segunda Entrega/views/layout/NormativaRitel.php">
+                        <a href="/Spirit_web/Segunda_Entrega/views/layout/NormativaRitel.php">
                         <img src="assets/img/Ritel.png" alt="Imagen 2">
                         </a>
                         <p class="titulo">Normativa Ritel</p>
