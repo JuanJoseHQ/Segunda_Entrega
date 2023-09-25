@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Spirit Colombia</title>
     <link rel="icon" type="image/png" href="/Spirit_web/Segunda_Entrega/assets/img/Spirit_Icon.ico">
-    <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunga_Entrega/assets/css/StyleInicio.css">
+    <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunda_Entrega/assets/css/StyleInicio.css">
 </head>
 <body>
     <br><br><br><br>

@@ -6,7 +6,7 @@
     <title>Contacto - Spirit Colombia</title>
     <link rel="icon" type="image/png" href="/Spirit_web/Segunda_Entrega/assets/img/Spirit_Icon.ico">
     <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunda_Entrega/assets/css/StyleContacto.css">
-    <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunga_Entrega/assets/css/StylePrincipal.css">
+    <link rel="stylesheet" type="text/css" href="/Spirit_web/Segunda_Entrega/assets/css/StylePrincipal.css">
 </head>
 <body>
     <?php

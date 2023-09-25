@@ -37,10 +37,11 @@ body{
 }
 
 .video{
+    position: absolute;
+    height: 95%; 
     top: 0;
+    margin-bottom: 0;
     z-index: 10;
-    float: center;
-    margin-right: 1em;
 }
 
 .index_titulo{
