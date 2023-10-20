@@ -1,3 +1,12 @@
+<?php
+    require_once('C:/xampp/htdocs/Spirit_Web/Segunda_Entrega/models/database.php');
+    $db = new Database();
+    $con = $db->conectar();
+
+    $sql = $con->prepare("SELECT id, nombre, precio FROM producto");
+    $sql->execute();
+    $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +20,23 @@
     <?php
     include 'Header.php';
     ?>
-  
-    <h1 class="titulo" >Aclarar que aqui no hicimos nada, ya que esta parte crea cuadros
-     segun los dispositivos que esten en la base de datos</h1>
+    <div class="container_2">
+        
+            <?php foreach ($resultado as $row) { ?>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="#" alt="Imagen">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
+                            <p class="card-text">$<?php echo $row['precio']; ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        
+    </div>
+
+
     <?php
     include 'Footer.php';
     ?>

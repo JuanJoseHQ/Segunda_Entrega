@@ -1,7 +1,44 @@
-.titulo {
-    padding-top: 100px;
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: aliceblue;
+.container_2 {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.col {
+  flex: 0 0 33.33%; /* Tamaño fijo del 33.33% (una tercera parte) del ancho del contenedor */
+  max-width: 33.33%;
+  padding: 1rem;
+  height: 200px; /* Tamaño fijo para todas las columnas */
+  margin: 0 0 20px; /* Agrega espacio vertical de 20px entre las columnas */
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  height: 100%; /* Establecer una altura del 100% para que todas las columnas tengan la misma altura */
+  background-color: brown;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: white;
 }
