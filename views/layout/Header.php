@@ -22,6 +22,7 @@
             <a href="/Spirit_web/Segunda_Entrega/views/layout/NormativaRitel.php">Normativa RITEL</a>
             <a href="/Spirit_web/Segunda_Entrega/views/layout/Domotica.php">Domótica</a>
             <a href="/Spirit_web/Segunda_Entrega/views/layout/Contacto.php">Contacto</a>
+            <a href="/Spirit_web/Segunda_Entrega/views/layout/Administrador.php">Administrador</a>
             <label for="check" class="close-menu">&#215</label>
         </nav>
     </header>

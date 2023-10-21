@@ -24,8 +24,8 @@
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 250px;
 }
 
 .card-body {
@@ -35,9 +35,15 @@
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: aqua;
 }
 
 .card-text {
   font-size: 1rem;
+  text-align: right;
+}
+
+.card-descripcion {
+  font-size: 0.9rem;
+  text-align: justify;
+  font-family: 'Lucida Console', serif;
 }

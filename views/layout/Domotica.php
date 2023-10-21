@@ -25,11 +25,20 @@
             <?php foreach ($resultado as $row) { ?>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="#" alt="Imagen">
+                        <?php
+                            $id = $row['id'];
+                            $img = "/Spirit_web/Segunda_Entrega/assets/img/" .$id. ".jpg";
+                            $boll = file_exists($img);
+                            if (!$boll) 
+                            {
+                                //$img = "/Spirit_web/Segunda_Entrega/assets/img/nophoto.jpg";
+                            }
+                        ?>
+                        <img src="<?php echo $img;?> " alt="Imagen">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
-                            <p class="card-text">$<?php echo $row['descripcion']; ?></p>
-                            <p class="card-text">$<?php echo $row['precio']; ?></p>
+                            <h5 class="card-title"><?php echo  $row['nombre']; ?></h5>
+                            <p class="card-descripcion"><?php echo $row['descripcion']?></p>
+                            <p class="card-text">$<?php echo number_format($row['precio'], 2, ".",","); ?></p>
                         </div>
                     </div>
                 </div>
