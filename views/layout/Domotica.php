@@ -3,7 +3,7 @@
     $db = new Database();
     $con = $db->conectar();
 
-    $sql = $con->prepare("SELECT id, nombre, precio FROM producto");
+    $sql = $con->prepare("SELECT id, nombre, precio, descripcion FROM producto");
     $sql->execute();
     $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -28,6 +28,7 @@
                         <img src="#" alt="Imagen">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
+                            <p class="card-text">$<?php echo $row['descripcion']; ?></p>
                             <p class="card-text">$<?php echo $row['precio']; ?></p>
                         </div>
                     </div>
