@@ -21,7 +21,7 @@
     include 'Header.php';
     ?>
     <div class="CRUD">
-        <form action = "/Spirit_web/Segunda_Entrega/models/Producto.php" method="post">
+        <form action = "/Spirit_web/Segunda_Entrega/controllers/InsertarProducto.php" method="post">
             <h>Administrador de Productos</h>
 
             <input type= "text" name = "Nombre" placeholder="Nombre">
@@ -56,7 +56,7 @@
                     <th><?php echo  $row['Precio']; ?></th>
                     <th><?php echo  $row['Cantidad']; ?></th>
                     <th><a href = "/Spirit_web/Segunda_Entrega/views/layout/EditarProducto.php?Id=<?php echo  $row['Id']; ?>" class = "Editar">Editar</a></th>
-                    <th><a href = "/Spirit_web/Segunda_Entrega/models/EliminarProducto.php?Id=<?php echo  $row['Id']; ?>" class= "Eliminar">Eliminar</a></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/controllers/EliminarProducto.php?Id=<?php echo  $row['Id']; ?>" class= "Eliminar">Eliminar</a></th>
                 </tr>
                 <?php } ?>
            </tbody>

@@ -20,7 +20,7 @@
 </head>
 <body>
     <div class="CRUD">
-    <form action="/Spirit_web/Segunda_Entrega/models/EditarProducto_.php" method="post">
+    <form action="/Spirit_web/Segunda_Entrega/controllers/EditarProducto_.php" method="post">
             <h>Editor de Productos</h>
             <?php foreach ($resultado as $row) { ?>
             <input type="hidden" name="Id" placeholder="Id" value="<?php echo $row['Id']; ?>">

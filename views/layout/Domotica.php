@@ -27,12 +27,11 @@
                     <div class="card shadow-sm">
                         <?php
                             $id = $row['id'];
-                            $img = "/Spirit_web/Segunda_Entrega/assets/img/" .$id. ".jpg";
-                            $boll = file_exists($img);
-                            if (!$boll) 
-                            {
-                                //$img = "/Spirit_web/Segunda_Entrega/assets/img/nophoto.jpg";
+                            $img = "/Spirit_web/Segunda_Entrega/assets/img/" . $id . ".jpg";
+                            if (!is_file($img)) {
+                                $img = "/Spirit_web/Segunda_Entrega/assets/img/nophoto.jpg";
                             }
+                            
                         ?>
                         <img src="<?php echo $img;?> " alt="Imagen">
                         <div class="card-body">

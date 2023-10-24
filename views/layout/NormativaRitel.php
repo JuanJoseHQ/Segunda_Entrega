@@ -18,8 +18,8 @@
                 <h1>¿Qué es la Normativa Ritel?</h1>
                 <p>La normativa RETIE (Reglamento Técnico de Instalaciones 
                     Eléctricas) es una regulación en Colombia que establece estándares de seguridad
-                     para instalaciones eléctricas, protegiendo a las personas y los bienes de 
-                     riesgos eléctricos.</p>
+                    para instalaciones eléctricas, protegiendo a las personas y los bienes de 
+                    riesgos eléctricos.</p>
             </div>
             <div class="Imagen">
                 <img src="/Spirit_web/Segunda_Entrega/assets/img/Ritel_ritel.png">
