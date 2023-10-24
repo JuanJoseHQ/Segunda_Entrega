@@ -17,10 +17,10 @@
                 <br>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required>
                 <br><br><br><br>
-                <a href="index.html" id="loginButton" class="button-link">Ingresar</a>
+                <a href="/Spirit_web/Segunda_Entrega/Index.php" id="loginButton" class="button-link">Ingresar</a>
                 <br><br><br><br>
                 <div class="login">
-                    <p>¿Necesitas una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/layout/Index.php">Registrarse</a></p>
+                    <p>¿Necesitas una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/layout/Registro.php">Registrarse</a></p>
                 </div>
             </form>
         </div>

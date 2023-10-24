@@ -13,8 +13,6 @@
         <div class="form-background">
             <h1>Registrarse</h1>
             <form id="registrationForm">
-                <input type="text" name="username" id="username" placeholder="Nombre de usuario" required>
-                <br>
                 <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
                 <br>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required>
@@ -36,12 +34,11 @@
         var registrationForm = document.getElementById("RegistrarButton");
 
         registrationForm.addEventListener("click", function(event) {
-            var username = document.getElementById("username").value;
             var email = document.getElementById("email").value;
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("confirmPassword").value;
 
-            if (username === "" || email === "" || password === "" || confirmPassword === "") {
+            if (email === "" || password === "" || confirmPassword === "") {
                 event.preventDefault();
                 alert("Por favor, completa todos los campos.");
             } else if (password !== confirmPassword) {
