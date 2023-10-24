@@ -24,11 +24,9 @@ if (isset($_POST['correo'])) {
             $_SESSION['rol'] = $row['Rol'];
             header('Location: /Spirit_web/Segunda_Entrega/Index.php');
         } else {
-            // Contraseña incorrecta
             header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
         }
     } else {
-        // El correo no existe en la base de datos
         header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
     }
 } else {
