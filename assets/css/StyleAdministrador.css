@@ -1,3 +1,68 @@
-.CRUD{
-    padding-top: 100px;
+html{
+    text-align: center;
+}
+
+.CRUD form{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.CRUD form input{
+    padding: 8px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+}
+
+.CRUD form input[type = submit]{
+    border:none;
+    padding: 12px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: aqua;
+    border: 2px solid  aqua;
+}
+
+.Table table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr{
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+table th{
+    padding: 16px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.Editar{
+    background-color: #009688;
+    padding: 6px;
+    color: #aaa;
+    text-align: center;
+    font-size: bold;
+}
+
+.Eliminar{
+    background-color: red;
+    padding: 6px;
+    color: #aaa;
+    text-align: center;
+    font-size: bold;
 }

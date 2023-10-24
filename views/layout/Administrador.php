@@ -21,19 +21,19 @@
     include 'Header.php';
     ?>
     <div class="CRUD">
-        <form action = "ProductoController.php">
+        <form action = "/Spirit_web/Segunda_Entrega/models/Producto.php" method="post">
             <h>Administrador de Productos</h>
 
             <input type= "text" name = "Nombre" placeholder="Nombre">
             <input type= "text" name = "Descripcion" placeholder="Descripcion">
-            <input type= "text" name = "Precio" placeholder="Precio">
-            <input type= "text" name = "Cantidad" placeholder="Cantidad">
+            <input type= "number" name = "Precio" placeholder="Precio">
+            <input type= "number" name = "Cantidad" placeholder="Cantidad">
 
-            <input type= "summit" value="Agregar Producto">
+            <input type= "submit" value="Agregar Producto">
         </form>
     </div>
 
-    <div>
+    <div class = "Table">
         <h>CRUD Productos</h>
         <table>
            <thead>
@@ -47,17 +47,19 @@
                     <th></th>
                 </tr>
            </thead>
-           <body>
+           <tbody>
                 <?php foreach ($resultado as $row){?>
-                <th><?php echo  $row['Id']; ?></th>
-                <th><?php echo  $row['Nombre']; ?></th>
-                <th><?php echo  $row['Descripcion']; ?></th>
-                <th><?php echo  $row['Precio']; ?></th>
-                <th><?php echo  $row['Cantidad']; ?></th>
-                <th><a href = "#">Editar</a></th>
-                <th><a href = "#">Eliminar</a></th>
+                <tr>
+                    <th><?php echo  $row['Id']; ?></th>
+                    <th><?php echo  $row['Nombre']; ?></th>
+                    <th><?php echo  $row['Descripcion']; ?></th>
+                    <th><?php echo  $row['Precio']; ?></th>
+                    <th><?php echo  $row['Cantidad']; ?></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/views/layout/EditarProducto.php?Id=<?php echo  $row['Id']; ?>" class = "Editar">Editar</a></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/models/EliminarProducto.php?Id=<?php echo  $row['Id']; ?>" class= "Eliminar">Eliminar</a></th>
+                </tr>
                 <?php } ?>
-           </body>
+           </tbody>
             
         </table>
     </div>

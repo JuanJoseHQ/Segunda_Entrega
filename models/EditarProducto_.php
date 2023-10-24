@@ -3,14 +3,15 @@
     $db = new Database();
     $con = $db->conectar();
 
-    $Id = null;
+    $Id = $_POST['Id'];
     $Nombre = $_POST["Nombre"];
     $Descripcion = $_POST["Descripcion"];
     $Precio = $_POST["Precio"];
     $Cantidad = $_POST["Cantidad"];
 
-    $sql = $con->prepare("INSERT INTO `producto`(`Id`, `Nombre`, `Descripcion`, `Precio`, `Cantidad`) VALUES 
-        ('$Id','$Nombre','$Descripcion','$Precio','$Cantidad ')");
+    $sql = $con->prepare("UPDATE `producto` 
+    SET `Nombre`='$Nombre',`Descripcion`='$Descripcion ',`Precio`='$Precio',`Cantidad`='$Cantidad '
+    WHERE `Id` = '$Id'");
     $sql->execute();
     
     if($sql){
