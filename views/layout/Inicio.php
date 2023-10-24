@@ -12,12 +12,12 @@
     <div class="container">
         <div class="form-background">
             <h1>Iniciar sesión</h1>
-            <form>
-                <input type="email" name="email" id="email" placeholder="Correo" required>
+            <form action="/Spirit_web/Segunda_Entrega/views/layout/VariablesSesion.php" method="post" >
+                <input type="email" name="correo" id="email" placeholder="Correo" required>
                 <br>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required>
                 <br><br><br><br>
-                <a href="/Spirit_web/Segunda_Entrega/Index.php" id="loginButton" class="button-link">Ingresar</a>
+                <input type="submit" value="Iniciar Sesion">
                 <br><br><br><br>
                 <div class="login">
                     <p>¿Necesitas una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/layout/Registro.php">Registrarse</a></p>
@@ -27,17 +27,4 @@
     </div>
 </body>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var loginButton = document.getElementById("loginButton");
-        loginButton.addEventListener("click", function(event) {
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            if (email === "" || password === "") {
-                event.preventDefault();
-                alert("Por favor, completa todos los campos.");
-            }
-        });
-    });
-    </script>
 </html>

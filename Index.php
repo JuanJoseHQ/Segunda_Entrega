@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +23,7 @@
                     cableado estructurado y redes wifi. </p>    
                     
                 <div class = "video">
-                <video autoplay muted loop src = "assets/img/video.mp4"></video>
+                <video autoplay muted loop src = "asets/img/video.mp4"></video>
                 </div>
             </section>
         </div>
