@@ -7,14 +7,15 @@ body{
     background-color:rgb(0, 0, 0) ;
 }
 
-.sliders{
+.sliders {
     position: relative;
-    width: 100%;
+    width: 100vw; 
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow: auto;
     overflow-x: hidden;
 }
+
 
 .slide{
     scroll-snap-align: center;

@@ -3,18 +3,36 @@ session_start();
 
 if (isset($_POST['correo'])) {
     $email = $_POST['correo'];
+    $password = $_POST['contraseña'];
 
-    // Puedes realizar la validación y autenticación del usuario aquí.
-    // Por ejemplo, comparar el correo y la contraseña con los valores en tu base de datos.
+    require_once('C:/xampp/htdocs/Spirit_Web/Segunda_Entrega/models/database.php');
+    $db = new Database();
+    $con = $db->conectar();
 
-    // Si el usuario es válido, inicializa las variables de sesión.
-    $_SESSION['correo'] = $email;
-    $_SESSION['sesion'] = true;
+    $sql = $con->prepare("SELECT * FROM usuario WHERE Email = :email");
+    $sql->bindParam(':email', $email);
+    $sql->execute();
 
-    // Redirige al usuario a la página deseada.
-    header('Location: /Spirit_web/Segunda_Entrega/Index.php');
+    $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+    if (count($resultado) > 0) {
+        $row = $resultado[0];
+
+        if (strcasecmp($password, $row["Contrasena"]) == 0) {
+            $_SESSION['correo'] = $email;
+            $_SESSION['sesion'] = true;
+            $_SESSION['rol'] = $row['Rol'];
+            header('Location: /Spirit_web/Segunda_Entrega/Index.php');
+        } else {
+            // Contraseña incorrecta
+            header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
+        }
+    } else {
+        // El correo no existe en la base de datos
+        header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
+    }
 } else {
-    // Maneja el caso en el que los datos del formulario no se enviaron correctamente.
-    header('Location: /Spirit_web/Segunda_Entrega/Inicio.php');
+    header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
 }
+
 ?>

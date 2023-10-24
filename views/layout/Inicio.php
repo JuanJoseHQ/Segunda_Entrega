@@ -15,7 +15,7 @@
             <form action="/Spirit_web/Segunda_Entrega/views/layout/VariablesSesion.php" method="post" >
                 <input type="email" name="correo" id="email" placeholder="Correo" required>
                 <br>
-                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input type="password" name="contraseña" id="password" placeholder="Contraseña" required>
                 <br><br><br><br>
                 <input type="submit" value="Iniciar Sesion">
                 <br><br><br><br>
