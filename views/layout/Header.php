@@ -33,7 +33,6 @@ session_start();
                 
             } else {
                 echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Inicio.php">Inicio</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Registro.php">Registrar</a>';
                 echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/NormativaRitel.php">Normativa RITEL</a>';
                 echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Domotica.php">Domótica</a>';
                 echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Contacto.php">Contacto</a>';

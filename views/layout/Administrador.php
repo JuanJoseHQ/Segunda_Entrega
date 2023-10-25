@@ -34,7 +34,7 @@
     </div>
 
     <div class = "Table">
-        <h>CRUD Productos</h>
+        <h>Productos</h>
         <table>
            <thead>
                 <tr>

@@ -3,7 +3,7 @@ html{
 }
 
 .CRUD form{
-    padding-top: 200px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -14,7 +14,7 @@ html{
 
 .CRUD form input{
     padding: 8px;
-    border: 2px solid #aaa;
+    border: 2px solid #f0f0f0;;
     border-radius: 4px;
     outline: none;
 }
@@ -25,9 +25,9 @@ html{
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
-    background-color: aliceblue;
-    color: aqua;
-    border: 2px solid  aqua;
+    background-color: #f0f0f0;;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
 }
 
 .Table table{
@@ -40,7 +40,7 @@ html{
 }
 
 table tr{
-    background-color: aliceblue;
+    background-color: #f0f0f0;
     border: 1px solid #ddd;
     padding: 4px;
 }
@@ -54,7 +54,7 @@ table th{
 .Editar{
     background-color: #009688;
     padding: 6px;
-    color: #aaa;
+    color: #000000;
     text-align: center;
     font-size: bold;
 }
@@ -62,7 +62,12 @@ table th{
 .Eliminar{
     background-color: red;
     padding: 6px;
-    color: #aaa;
+    color: #000000;
     text-align: center;
     font-size: bold;
+}
+
+h{
+    color:white;
+    font-style: bold;
 }
