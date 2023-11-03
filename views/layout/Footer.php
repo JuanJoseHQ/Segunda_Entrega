@@ -10,6 +10,5 @@
     <footer>
         <p class = "descripcion">Creado por Juan José Herrera y Felipe Ramirez &copy; 2023</p>
     </footer>
-        <
 </body>
 </html>

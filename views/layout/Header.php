@@ -22,20 +22,20 @@ session_start();
     <nav class="menu">
     <?php
             if (isset($_SESSION['sesion']) && $_SESSION['sesion'] === true) {
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/CerrarSesion.php">Cerrar Sesión</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/CerrarSesion.php">Cerrar Sesión</a>';
                 echo '<a >' . $_SESSION['correo'] . '</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/NormativaRitel.php">Normativa RITEL</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Domotica.php">Domótica</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Contacto.php">Contacto</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/NormativaRitel.php">Normativa RITEL</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/Domotica.php">Domótica</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/Contacto.php">Contacto</a>';
                 if($_SESSION['rol'] === 1){
-                    echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Administrador.php">Administrador</a>';
+                    echo '<a href="/Spirit_web/Segunda_Entrega/views/Administrador.php">Administrador</a>';
                 }
                 
             } else {
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Inicio.php">Inicio</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/NormativaRitel.php">Normativa RITEL</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Domotica.php">Domótica</a>';
-                echo '<a href="/Spirit_web/Segunda_Entrega/views/layout/Contacto.php">Contacto</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/Inicio.php">Inicio</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/NormativaRitel.php">Normativa RITEL</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/Domotica.php">Domótica</a>';
+                echo '<a href="/Spirit_web/Segunda_Entrega/views/Contacto.php">Contacto</a>';
             }
     ?>
         

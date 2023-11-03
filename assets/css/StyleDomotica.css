@@ -47,3 +47,13 @@
   text-align: justify;
   font-family: 'Lucida Console', serif;
 }
+
+@media (max-width: 768px) {
+  .col {
+    flex: 0 0 100%; 
+    max-width: 100%;
+    padding: 1rem;
+    height: 600px; 
+    margin: 0 0 20px; 
+  }
+}

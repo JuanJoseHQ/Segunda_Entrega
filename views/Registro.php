@@ -22,7 +22,7 @@
                 <a href="Inicio.html" id="RegistrarButton" class="button-link">Registrarse</a>
                 <br><br><br><br>
                 <div class="login">
-                    <p>¿Ya tienes una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/layout/Inicio.php">Iniciar sesión</a></p>
+                    <p>¿Ya tienes una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/Inicio.php">Iniciar sesión</a></p>
                 </div>
             </form>
         </div>

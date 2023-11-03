@@ -24,13 +24,13 @@ if (isset($_POST['correo'])) {
             $_SESSION['rol'] = $row['Rol'];
             header('Location: /Spirit_web/Segunda_Entrega/Index.php');
         } else {
-            header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
+            header('Location: /Spirit_web/Segunda_Entrega/views/Inicio.php');
         }
     } else {
-        header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
+        header('Location: /Spirit_web/Segunda_Entrega/views/Inicio.php');
     }
 } else {
-    header('Location: /Spirit_web/Segunda_Entrega/views/layout/Inicio.php');
+    header('Location: /Spirit_web/Segunda_Entrega/views/Inicio.php');
 }
 
 ?>

@@ -18,7 +18,7 @@
 </head>
 <body>
     <?php
-    include 'Header.php';
+    require_once('C:/xampp/htdocs/Spirit_web/Segunda_Entrega/views/layout/Header.php');
     ?>
     <div class="container_2">
         
@@ -47,7 +47,7 @@
 
 
     <?php
-    include 'Footer.php';
+    require_once('C:/xampp/htdocs/Spirit_web/Segunda_Entrega/views/layout/Footer.php');
     ?>
         
 </body>

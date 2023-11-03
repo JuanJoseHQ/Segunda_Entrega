@@ -6,6 +6,10 @@
     $sql = $con->prepare("SELECT * FROM producto");
     $sql->execute();
     $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+    $sql = $con->prepare("SELECT * FROM usuario");
+    $sql->execute();
+    $resultado2 = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,8 +22,44 @@
 </head>
 <body>
     <?php
-    include 'Header.php';
+    require_once('C:/xampp/htdocs/Spirit_web/Segunda_Entrega/views/layout/Header.php');
     ?>
+    <div class="CRUD">
+        <form action = "/Spirit_web/Segunda_Entrega/controllers/InsertarUsuario.php" method="post">
+            <h>Administrador de Usuarios</h>
+        </form>
+    </div>
+    <div class = "Table">       
+        <h>Usuarios</h>
+        <table>
+           <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Rol</th>
+                    <th>Email</th>
+                    <th>Contraseña</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+           </thead>
+           <tbody>
+                <?php foreach ($resultado2 as $row){?>
+                <tr>
+                    <th><?php echo  $row['Id']; ?></th>
+                    <th><?php echo  $row['Rol']; ?></th>
+                    <th><?php echo  $row['Email']; ?></th>
+                    <th><?php echo  $row['Contrasena']; ?></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/views/EditarUsuario.php?Id=<?php echo  $row['Id']; ?>" class = "Editar">Editar</a></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/controllers/EliminarUsuario.php?Id=<?php echo  $row['Id']; ?>" class= "Eliminar">Eliminar</a></th>
+                </tr>
+                <?php } ?>
+           </tbody>
+            
+        </table>
+    </div>
+            
+        
+
     <div class="CRUD">
         <form action = "/Spirit_web/Segunda_Entrega/controllers/InsertarProducto.php" method="post">
             <h>Administrador de Productos</h>
@@ -55,7 +95,7 @@
                     <th><?php echo  $row['Descripcion']; ?></th>
                     <th><?php echo  $row['Precio']; ?></th>
                     <th><?php echo  $row['Cantidad']; ?></th>
-                    <th><a href = "/Spirit_web/Segunda_Entrega/views/layout/EditarProducto.php?Id=<?php echo  $row['Id']; ?>" class = "Editar">Editar</a></th>
+                    <th><a href = "/Spirit_web/Segunda_Entrega/views/EditarProducto.php?Id=<?php echo  $row['Id']; ?>" class = "Editar">Editar</a></th>
                     <th><a href = "/Spirit_web/Segunda_Entrega/controllers/EliminarProducto.php?Id=<?php echo  $row['Id']; ?>" class= "Eliminar">Eliminar</a></th>
                 </tr>
                 <?php } ?>
@@ -64,7 +104,7 @@
         </table>
     </div>
     <?php
-    include 'Footer.php';
+    require_once('C:/xampp/htdocs/Spirit_web/Segunda_Entrega/views/layout/Footer.php');
     ?>
         
 </body>

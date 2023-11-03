@@ -12,7 +12,7 @@
     <div class="container">
         <div class="form-background">
             <h1>Iniciar sesión</h1>
-            <form action="/Spirit_web/Segunda_Entrega/views/layout/VariablesSesion.php" method="post" >
+            <form action="/Spirit_web/Segunda_Entrega/views/VariablesSesion.php" method="post" >
                 <input type="email" name="correo" id="email" placeholder="Correo" required>
                 <br>
                 <input type="password" name="contraseña" id="password" placeholder="Contraseña" required>
@@ -20,7 +20,7 @@
                 <input type="submit" value="Iniciar Sesion">
                 <br><br><br><br>
                 <div class="login">
-                    <p>¿Necesitas una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/layout/Registro.php">Registrarse</a></p>
+                    <p>¿Necesitas una cuenta?&nbsp;&nbsp;&nbsp;<a href="/Spirit_web/Segunda_Entrega/views/Registro.php">Registrarse</a></p>
                 </div>
             </form>
         </div>
