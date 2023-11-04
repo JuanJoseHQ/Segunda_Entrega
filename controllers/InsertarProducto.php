@@ -14,6 +14,6 @@
     $sql->execute();
     
     if($sql){
-        Header("Location: /Spirit_web/Segunda_Entrega/views/layout/Administrador.php");
+        Header("Location: /Spirit_web/Segunda_Entrega/views/Administrador.php");
     }
 ?>

@@ -9,7 +9,7 @@ if (isset($_POST['correo'])) {
     $db = new Database();
     $con = $db->conectar();
 
-    $sql = $con->prepare("SELECT * FROM usuario WHERE Email = :email");
+    $sql = $con->prepare("SELECT Contrasena,Email,Rol FROM usuario WHERE Email = :email");
     $sql->bindParam(':email', $email);
     $sql->execute();
 
@@ -18,7 +18,7 @@ if (isset($_POST['correo'])) {
     if (count($resultado) > 0) {
         $row = $resultado[0];
 
-        if (strcasecmp($password, $row["Contrasena"]) == 0) {
+        if (strcasecmp($password, $row['Contrasena']) == 0) {
             $_SESSION['correo'] = $email;
             $_SESSION['sesion'] = true;
             $_SESSION['rol'] = $row['Rol'];

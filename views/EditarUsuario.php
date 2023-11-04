@@ -4,7 +4,7 @@
     $con = $db->conectar();
 
     $Id = $_GET['Id'];
-    $sql = $con->prepare("SELECT * FROM usuario WHERE Id = '$Id'");
+    $sql = $con->prepare("SELECT Id,Rol,Email,Contrasena FROM usuario WHERE Id = '$Id'");
     $sql->execute();
     $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -26,7 +26,7 @@
             <input type="hidden" name="Id" placeholder="Id" value="<?php echo $row['Id']; ?>">
             <input type="number" name="Rol" placeholder="Nombre" value="<?php echo $row['Rol']; ?>">
             <input type="text" name="Email" placeholder="Descripcion" value="<?php echo $row['Email']; ?>">
-            <input type="number" name="Contrasena" placeholder="Precio" value="<?php echo $row['Contrasena']; ?>">
+            <input type="number" name="Contrasena" placeholder="Contraseña" value="<?php echo $row['Contrasena']; ?>">
             <input type="submit" value="Actualizar Usuario">
             <?php } ?>
         </form>

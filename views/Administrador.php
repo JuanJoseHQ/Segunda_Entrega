@@ -25,9 +25,13 @@
     require_once('C:/xampp/htdocs/Spirit_web/Segunda_Entrega/views/layout/Header.php');
     ?>
     <div class="CRUD">
-        <form action = "/Spirit_web/Segunda_Entrega/controllers/InsertarUsuario.php" method="post">
-            <h>Administrador de Usuarios</h>
-        </form>
+    <form action = "/Spirit_web/Segunda_Entrega/controllers/InsertarUsuario.php" method="post">
+        <h>Administrador de Usuarios</h>
+        <input type= "text" name = "Email" placeholder="Email">
+        <input type= "number" name = "contrasena" placeholder="contraseña">
+        
+        <input type= "submit" value="Agregar Usuario">
+    </form>
     </div>
     <div class = "Table">       
         <h>Usuarios</h>
