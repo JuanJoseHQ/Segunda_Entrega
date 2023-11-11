@@ -1,0 +1,25 @@
+A continuacion un indicativo de como instalar y correr el proyecto 
+de SpiritWeb.
+
+1. Inicialmente se debe tener descargado XAMPP Controller o alguna
+otra herramienta que permita correr archivos Php.
+
+2. Si optaste por la opcion de XAMPP debes descargar el archivo.zip
+del git
+
+3. Debes crear una carpeta llamada "Spirit_Web" en la dirrecion de
+XAMPP, por lo general es: C:\xampp\htdocs
+
+4. En esa carpeta copiaras el archivo XAMPP Y lo descomprimes.
+
+5. Posteriormente debes abrir el XAMPP y establecer conexion con 
+Apache y MySql
+
+6. Te diriges al phpMyAdmin que generlamente tiene como URL:
+http://localhost/phpmyadmin/ y agregas una nueva base de datos llamada
+spirit_web. En el archivo que descargaste encontraras una carpeta
+llamada Backup -Intrucciones, allí estara el SQL de la base de datos. 
+En la base de datos spirit_web que creaste le daras impostaras y
+seleccionaras elarchivo .sql.
+
+7. Finalmente puedes disfrutar del proyecto!
